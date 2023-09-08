@@ -1,0 +1,12 @@
+https://www.bilibili.com/video/BV15o4y1u7k1?p=2&vd_source=3cdcad433d83be539b5e54feb835b3c5
+
+后续:
+
+新sap处理
+SELECT  DISTINCT shjh05,shjh06,shjh03 FROM `OEM_shjh`  where shjh06 not in (select sap03 from OEM_sap_list)
+union all 
+SELECT  DISTINCT james01,'','james' FROM `OEM_james`  where james01 not in (select sap01 from OEM_sap_list) and  james01 not in(SELECT   shjh05 FROM `OEM_shjh` )
+页面中处理,弹窗增加
+
+
+james执行情况
